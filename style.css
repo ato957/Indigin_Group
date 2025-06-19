@@ -1,0 +1,33 @@
+/* Basic reset */
+* {
+	* margin: 0;
+	* padding: 0;
+	* box-sizing: border-box;
+	* }
+*.navbar-dark .navbar-nav .nav-link {
+color: white;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+color: #fdd835;
+}
+/* Banner styling */ .banner {
+background-image: url('Images/Land.jpg');
+/* Replace with your image filename */
+background-size: cover;
+background-position: center;
+height: 300px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+text-shadow: 1px 1px 3px black;
+font-size: 2rem;
+}
+body {
+font-family: Arial, sans-serif;
+}
+.hero-section {
+background: url('image.jpg') no-repeat center center;
+background-size: cover;
+height: 600px;
+} 
