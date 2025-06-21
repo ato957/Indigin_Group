@@ -19,7 +19,78 @@ section {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+/* ===== Navigation Bar Styles ===== */
+.navbar {
+  background-color: #40023D; /* Deep purple background */
+  padding: 0.8rem 1rem;
+  height: 60px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
 
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #ffc107; /* Yellow hover effect */
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffc107 !important; /* Highlight active link */
+}
+
+/* Dropdown toggle arrow styling */
+.navbar-nav .dropdown-toggle::after {
+  margin-left: 0.3em;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.dropdown-item {
+  color: #40023D;
+  font-weight: 500;
+  padding: 10px 16px;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #40023D;
+}
+
+/* Book A Visit Button */
+.navbar .btn-warning {
+  background-color: #ffc107;
+  color: #40023D;
+  font-weight: 600;
+  padding: 6px 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .btn-warning:hover {
+  background-color: #e6b800;
+  color: #fff;
+}
+
+/* Responsive Toggler */
+.navbar-toggler {
+  border: none;
+  color: #fff;
+}
 /* Navbar */
 .navbar {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -37,7 +108,7 @@ section {
 
 /* Hero Section */
 .hero-banner {
-  height: 90vh;
+  height: 50vh;
   background-size: cover;
   background-position: center;
   display: flex;
