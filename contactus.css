@@ -1,0 +1,140 @@
+/* ===== General Styles ===== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #40023D;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.navbar .nav-link.active {
+  color: #ffc107 !important;
+}
+
+/* ===== Breadcrumb Section ===== */
+section.text-center {
+  background-color: #f8f9fa;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  justify-content: center;
+}
+
+.breadcrumb-item a {
+  color: #40023D;
+}
+
+.breadcrumb-item.active {
+  color: #777;
+}
+
+/* ===== Contact Info Section ===== */
+section h2,
+section h3 {
+  font-weight: 600;
+  color: #40023D;
+}
+
+.lead {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+section h4 {
+  color: #40023D;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ===== Contact Form ===== */
+form {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+form input,
+form textarea {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form .btn-warning {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 25px;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+form .btn-warning:hover {
+  background-color: #e0a800;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #40023D;
+  text-align: center;
+  color: #ddd;
+  font-size: 0.95rem;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 2px 0;
+}
+
+/* ===== Responsive Tweaks ===== */
+@media (max-width: 767px) {
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar .btn {
+    margin-top: 10px;
+  }
+
+  section .row.text-center > div {
+    margin-bottom: 20px;
+  }
+
+  form {
+    padding: 0;
+  }
+}

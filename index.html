@@ -4,35 +4,113 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Estate Masters Limited</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		<link rel="stylesheet" href="style.css">
+		<!-- Bootstrap CDN -->
+		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="styylesheet">
+		 <!-- Custom CSS -->
+		  <link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="#">Estate Masters</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-					<li class="nav-item"><a class="nav-link btn btn-warning text-dark ml-2" href="#">Book A Visit</a></li>
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #400230;">
+			<div class="container">
+				<a class="navbar-brand fw-bold" href="#">
+					<img src="Images/estate.jpg" alt="Estate Masters" height="40">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="Our Services.html">Our Services</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="ourteam.html">Our Team</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="Kasoa.html">Kasoa</a></li>
+					<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="ourSiteDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Our Site
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="ourSiteDropdown">
+      <li><a class="dropdown-item" href="dwellys-court.html">Dwellys Court</a></li>
+      <li><a class="dropdown-item" href="kings-cottage.html">Kings Cottage</a></li>
+      <li><a class="dropdown-item" href="palm-hills.html">Palm Hills</a></li>
+      <li><a class="dropdown-item" href="tsopoli-site-1.html">Tsopoli Site 1</a></li>
+      <li><a class="dropdown-item" href="royal-city.html">The Royal City</a></li>
+      <li><a class="dropdown-item" href="mobole-afienya.html">Mobole - Afienya</a></li>
+    </ul>
+  </li>
+					<li class="nav-item"><a class="nav-link text-white" href="faq.html">FAQ</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="news.html">News</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="contactus.html">Contact Us</a></li>
+					<li class="nav-item"><a class="btn btn-warning ms-3" href="#">Book A Visit</a></li>
 				</ul>
+			</div>
 			</div>
 		</nav>
 		<!-- Hero Section -->
-		<header class="hero-section text-white text-center d-flex align-items-center justify-content-center">
-			<div>
-				<h1>We are your Most Preferred Estate Partners!</h1>
-		                    <a href="#" class="btn btn-warning m-2">Call Us</a>
-				    <a href="#" class="btn btn-light m-2">WhatsApp</a>
+		<section class="hero-banner d-flex align-items-center text-white" style="background-image: url('Images/land2.jpg'); background-size: cover; background-position: center; height: 90vh;">
+			<div class="container text-center">
+				<hi class="fw-bold">We Are Your Most Prefered Estate Partners!</hi>
+				<div class="mt-4">
+					<a href="#" class="btn btn-warning me-3">Call Us</a>
+					<a href="#" class="btn btn-outline-light">WhatsApp</a>
+				</div>
 			</div>
-		</header>
-		<!-- More sections would be added here to match the screenshot -->
+		</section>
+		<!-- Welcome Section-->
+		 <section class="py-5 bg-light">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col md-6">
+						<h3 class="mb-3">Welcome to Estate Masters Limited</h3>
+						<p>
+							We are a top real estate company providing affordable land for indiduals and investors.
+							Whether you are looking to build your dream home or expand your portfolio, we've got the 
+							right plot for you.
+						</p>
+						<a href="#" class="btn btn-warning mt-3">Read More</a>
+					</div>
+					<div class="col-md-6">
+						<img src="welcome.jpg" alt="Welcome Image" class="img-fluid rounded shadow-sm">
+					</div>
+				</div>
+			</div>
+		 </section>
+		 <!-- Promo Section -->
+		  <section class="py-5 text-center">
+			<div class="container">
+				<img src="promo.jpg" alt="Land Promo" class="img-fluid rounded shadow-sm" style="max-width: 500px;">
+			</div>
+		  </section>
+		  <!-- Statistics Section -->
+		   <section class="py-5 bg-warning text-dark">
+			<div class="container">
+				<div class="row yext-center">
+					<div class="col-md-3 mb-3">
+						<h3>3,500+</h3>
+						<p>Plots Sold</p>
+					</div>
+					<div class="col-md-3 mb-3">
+						<h3>3,500+</h3>
+						<p>Happy Clients</p>
+					</div>
+					<div class="col-md-3 mb-3">
+						<h3>30+</h3>
+						<p>Ongoing Projects</p>
+					</div>
+					<div class="col-md-3 mb-3">
+						<h3>10+</h3>
+						<p>Years Experience</p>
+					</div>
+				</div>
+			</div>
+		   </section>
+
+
+
+
+
+
 		<footer class="bg-dark text-white text-center p-4">
 			<p>© Estate Masters Limited - All rights reserved</p>
 		</footer>
